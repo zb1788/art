@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.boz.mapper.MusicInfoMapperCustom">
+  <select id="selectByPage" parameterType="hashmap" resultType="map">
+    select m.id,m.music_name ,m.music_filename,m.music_filepath ,groupid,(select title from art_music_group n where n.id=m.groupid) as groupname from art_music_info m limit #{start},#{size}
+  </select>
+</mapper>

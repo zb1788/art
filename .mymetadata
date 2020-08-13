@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Art"
+  id="myeclipse.1544595369274"
+  context-root="/Art"
+  j2ee-spec="1.7"
+  archive="Art.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

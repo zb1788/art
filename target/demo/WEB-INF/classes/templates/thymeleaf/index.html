@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+<body>
+Thymeleaf模板引擎
+<h1 th:text="${name}">hello world~~~~~~~</h1>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>USERNAME</th>
+        <th>TRUENAME</th>
+    </tr>
+    <tr th:each="item : ${userlist}">
+        <td th:text="${item.uid}"></td>
+        <td th:text="${item.username}"></td>
+        <td th:text="${item.truename}"></td>
+    </tr>
+</table>
+</body>
+</html>

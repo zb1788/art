@@ -1,0 +1,69 @@
+{
+  "hints": [],
+  "properties": [
+    {
+      "sourceType": "com.boz.bean.AuthorProperties",
+      "name": "author.age",
+      "defaultValue": 0,
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.boz.bean.AuthorProperties",
+      "name": "author.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.boz.bean.PersionProperties",
+      "name": "persion.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.boz.bean.PersionProperties",
+      "name": "persion.name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.boz.util.DbConfigProperties",
+      "name": "spring.datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.boz.util.DbConfigProperties",
+      "name": "spring.datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.boz.util.DbConfigProperties",
+      "name": "spring.datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.boz.util.DbConfigProperties",
+      "name": "spring.datasource.username",
+      "type": "java.lang.String"
+    }
+  ],
+  "groups": [
+    {
+      "sourceType": "com.boz.bean.AuthorProperties",
+      "name": "author",
+      "type": "com.boz.bean.AuthorProperties"
+    },
+    {
+      "sourceType": "com.boz.bean.PersionProperties",
+      "name": "persion",
+      "type": "com.boz.bean.PersionProperties"
+    },
+    {
+      "sourceType": "com.boz.util.DbConfigProperties",
+      "name": "spring.datasource",
+      "type": "com.boz.util.DbConfigProperties"
+    },
+    {
+      "sourceType": "com.boz.bean.DruidConfig",
+      "sourceMethod": "druid()",
+      "name": "spring.datasource",
+      "type": "javax.sql.DataSource"
+    }
+  ]
+}
